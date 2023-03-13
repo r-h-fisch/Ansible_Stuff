@@ -1,7 +1,8 @@
 --- 
-- host: all
+- name: Hello world
+  host: all
   gather-facts: false
   tasks: 
-    - name: Hello world
-      ansible.builtin.debug: 
-        msg: " Hello World!"
+  - name: Hello world
+    ansible.builtin.debug: 
+      msg: " Hello World!"
